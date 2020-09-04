@@ -1,0 +1,121 @@
+// @keyframes rotate-season {
+//     0% {
+//         transform: rotate(0deg);
+//     }
+//     100% {
+//         transform: rotate(360deg);
+//     }
+// }
+
+// .rotate-season {
+//     -webkit-animation-name: rotate-season; /* Chrome, Safari, Opera */
+//     -webkit-animation-duration: 2s; /* Chrome, Safari, Opera */
+//     -webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */
+//     -webkit-animation-timing-function: linear; /* Chrome, Safari, Opera */
+//     animation-name: rotate-season;
+//     animation-duration: 2s;
+//     animation-iteration-count: infinite;
+//     animation-timing-function: linear;
+// }
+
+.short-underline {
+    position: relative;
+
+    &::after {
+        content:' ';
+        position: absolute;
+        top:110%;
+        left:70px;
+        width: 73px;
+        border:2px solid $primary-color;
+        border-radius:4px;
+        box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+        transform:translateX(-100%);
+    }
+}
+
+input, textarea {
+    width: 100%;
+    border: 1px solid grey;
+    margin-bottom: 20px;
+    height: 50px;
+
+    &:hover, 
+    &:active,
+    &:focus
+    {
+        outline:0px !important;
+        -webkit-appearance:none;
+        box-shadow: none !important;
+        // border: 1.5px solid $secondary-color;
+    }
+}
+
+.creo-btn {
+    background: linear-gradient(90deg, #45E6FC 0%, #356EFF 100%);
+    border-radius: 2px;
+    color: white;
+    width: 186px;
+    height: 52px;
+    font-weight: 600;
+    font-size: 16px;
+    border: 1px solid #356EFF;
+
+    &:hover {
+        color: white;
+    }
+}
+
+.section-title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 36px;
+}
+
+.title-color {
+    color: var(--titleColor);
+}
+
+.content-color {
+    color: var(--textColor);
+}
+
+.color-gradient {
+    background: linear-gradient(90deg, #45E6FC 0%, #356EFF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.toggle-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+    z-index: 2;
+    width: 40px;
+    height: 40px;
+    background-color: var(--toggleIconBg);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 1px 5px #6e6e6e;
+    cursor: pointer;
+    @include transition-ease;
+
+    i{
+        color: var(--primaryColor);
+        font-size: 20px;
+    }
+}
+
+body {
+    @include transition-ease;
+}
+
+@media(max-width: 767px) {
+    .hide-mobile {
+        display: none;
+    }
+}
+
+

@@ -1,0 +1,83 @@
+#creo-news {
+    background-color: var(--sectionColorBg);
+    padding: 20px 0 20px 0;
+    position: relative;
+    @include transition-ease;
+
+    .underline {
+        position: absolute;
+        left: calc(50% - 39px);
+        top: 70px;
+        width: 78px;
+        height: 3px;
+        background: linear-gradient(90deg, #45E6FC 0%, #356EFF 100%);
+    }
+
+    .body {
+        .news-card {
+            background-blend-mode: normal, normal;
+            border-radius: 5px;
+            width: 336px;
+            height: 442px;
+            padding: 5%;
+            display: flex;
+            flex-direction: column-reverse;
+            margin-bottom: 20px;
+            margin-left: calc(50% - 168px);
+            cursor: pointer;
+            @include transition-ease;
+
+            &:hover {
+                transform: scale(1.1);
+                // position: relative;
+                // @include transition-ease;
+                // .content {
+                //     position: absolute;
+                //     @include transition-ease;
+                //     bottom: 50px;
+                //     // left: 120px;
+                //     // h3 {
+                //     //     margin-top: -50px;
+                //     // }
+                // }
+            }
+
+            &.card-1{
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0) 61.98%, rgba(0, 0, 0, 0.65) 100%), url("../../Assets/Images/creo_news_1.png");
+            }
+            &.card-2{
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0) 61.98%, rgba(0, 0, 0, 0.65) 100%), url("../../Assets/Images/creo_news_2.png");
+            }
+            &.card-3{
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0) 61.98%, rgba(0, 0, 0, 0.65) 100%), url("../../Assets/Images/creo_news_3.png");
+            }
+            &.card-4{
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0) 61.98%, rgba(0, 0, 0, 0.65) 100%), url("../../Assets/Images/creo_news_4.png");
+            }
+
+            .content {
+                @include transition-ease;
+                // background-color: red;
+                text-align: center;
+                padding: 5px;
+
+                .d-flex {
+                    justify-content: center;
+                }
+            }
+            h3 {
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 29px;
+                bottom: 30px;
+                color: white;
+            }
+
+            span {
+                font-size: 14px;
+                line-height: 22px;
+                color: white;
+            }
+        }
+    }
+}

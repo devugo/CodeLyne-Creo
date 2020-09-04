@@ -1,0 +1,17 @@
+@import 'variables';
+@import 'config';
+@import 'general';
+
+// Layouts styles Import
+@import 'layouts/header';
+@import 'layouts/footer';
+
+//  Sections styles import
+@import 'sections/home';
+@import 'sections/about';
+@import 'sections/offers';
+@import 'sections/pricing';
+@import 'sections/works';
+@import 'sections/team';
+@import 'sections/news';
+@import 'sections/contact';

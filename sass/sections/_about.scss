@@ -1,0 +1,50 @@
+#creo-about {
+    position: relative;
+    padding: 20px 5% 20px 5%;
+
+    .underline {
+        position: absolute;
+        // left: calc(50% - 39px);
+        left: 8%;
+        top: 80px;
+        width: 78px;
+        height: 3px;
+        background: linear-gradient(90deg, #45E6FC 0%, #356EFF 100%);
+    }
+    
+    .body {
+        .content {
+            padding: 20px 0;
+            // background-color: red;
+
+            p{
+                font-size: 18px;
+                line-height: 36px;
+                // color: var(--textColor);
+            }
+            h3{
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 29px;
+            }
+
+            .creo-about__brief {
+                display: flex;
+                align-items: flex-start;
+            }
+
+            img.creo-about__banner-image {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@include media-md {
+    #creo-about {
+    
+        .underline {
+            left: 6%;
+        }
+    }
+}

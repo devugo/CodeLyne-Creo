@@ -1,0 +1,77 @@
+#creo-footer {
+    background-color: #111111;
+    height: 227px;
+    padding: 20px 5% 20px 5%;
+
+    .container-fluid {
+        height: 100%;
+
+        .body {
+            height: 100%;
+    
+            .row {
+                height: 100%;
+                // display: flex;
+                // align-items: center;
+
+                .img-logo {
+                    display: flex;
+                    align-items: center;
+                    height: 100%;
+                    margin-left: 50px;
+                }
+                
+                .content {
+                    // background-color: red;
+                    height: 100%;
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    p{
+                        font-weight: normal;
+                        font-size: 24px;
+                        line-height: 80%;
+                        font-size: 22px;
+                        color: white;
+                    }
+        
+                    .footer-icons {
+                        // width: 60%;
+                        display: flex;
+                        justify-content: center;
+        
+                        img {
+                            margin: 0 10px;
+                        }
+                    }
+                    .input-group {
+                        position: relative;;
+        
+                        input {
+                            border-radius: 5px;
+                            height: 62px;
+        
+                            &::placeholder {
+                                padding-left: 5%;
+                            }
+                        }
+        
+                        img {
+                            position: absolute;
+                            right: 5%;
+                            top: 23px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-md {
+    #creo-footer {
+        // padding-left: 5%;
+        // padding-right: 5%;
+    }
+}

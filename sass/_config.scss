@@ -1,0 +1,61 @@
+// Author: CodeLyne
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Define a custom web font */
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../Assets/FONT/Gilroy-FREE/Gilroy-Light.otf') format('otf'),
+    // url('webfont.woff') format('woff'),
+    // url('webfont.ttf')  format('truetype'),
+}
+
+/* Use that font in a page */
+body {
+    font-family: 'MyWebFont', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    color: var(--textColor)
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gilroy', sans-serif;
+}
+
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
+}
+
+@mixin box-shadow {
+    box-shadow: 1px 2px 4px rgba(214, 217, 223, 0.5);
+}
+
+@mixin media-sm {
+    @media screen and (min-width: 500px){
+        @content;
+    }
+}
+@mixin media-md {
+    @media screen and (min-width: 768px){
+        @content;
+    }
+}
+@mixin media-md-bootstrap {
+    @media screen and (min-width: 992px){
+        @content;
+    }
+}
+@mixin media-lg {
+    @media screen and (min-width: 1024px){
+        @content;
+    }
+}
+@mixin media-xl {
+    @media screen and (min-width: 1600px){
+        @content;
+    }
+}

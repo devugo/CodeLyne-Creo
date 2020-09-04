@@ -1,0 +1,37 @@
+#creo-offers {
+    position: relative;
+    background-color: var(--sectionColorBg);
+    padding: 50px 5% 50px 5%;
+    @include transition-ease;
+
+    .underline {
+        position: absolute;
+        left: calc(50% - 39px);
+        top: 100px;
+        width: 78px;
+        height: 3px;
+        background: linear-gradient(90deg, #45E6FC 0%, #356EFF 100%);
+    }
+    .body {
+
+        .content {
+            margin-top: 20px;
+            // max-width: 300px;
+            img {
+                height: 70px;
+                width: 70px;
+            }
+
+            h3 {
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 36px;
+            }
+
+            p {
+                font-size: 18px;
+                line-height: 36px;
+            }
+        }
+    }
+}

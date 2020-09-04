@@ -1,0 +1,130 @@
+#creo-home {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../Assets/Images/creo_banner.png');
+    height: 650px;
+    color: rgba(255, 255, 255, 0.7);
+    .body {
+        height: 100%;
+        nav {
+            background: transparent !important;
+            padding-left: 5%;
+            padding-right: 5%;
+            padding-top: 1%;
+            padding-bottom: 1%;
+
+            .navbar-toggler {
+                border-color: white;
+            }
+
+            .navbar-brand {
+                img {
+                    width: 83px;
+                    height: 49px;
+                }
+            }
+
+            ul {
+                li {
+                    a{
+                        color: rgba(255, 255, 255, 0.7);
+                        font-size: 14px;
+                        line-height: 80%;
+                    }
+                }
+            }
+        }
+
+        .content {
+            width: 100%;
+            height: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            div {
+                max-width: 900px;
+
+                h1 {
+                    font-weight: bold;
+                    font-size: 40px;
+                    line-height: 89px;
+                }
+                p{
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 36px;
+                    margin-top: 20px;
+                    margin-bottom: 40px;
+                }
+            }
+
+           
+        }
+    }
+}
+
+@include media-md {
+    #creo-home {
+        height: 750px;
+        .body {
+            .content {
+                height: 85%;
+                div {
+                    h2 {
+                        font-size: 55px;
+                    }
+                    p{
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-md-bootstrap {
+    #creo-home {
+        .body {
+            nav {
+                ul {
+                    width: 40%;
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+
+            .content {
+    
+                div {
+    
+                    h1 {
+                        font-size: 72px;
+                    }
+                    p{
+                        font-size: 24px;
+                    }
+                }
+    
+               
+            }
+        }
+    }
+}
+
+@include media-lg {
+    #creo-home {
+        .body {
+            nav {
+                ul {
+                    
+                    li {
+
+                        a {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

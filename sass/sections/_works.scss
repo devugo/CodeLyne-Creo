@@ -1,0 +1,61 @@
+#creo-works {
+    background-color: var(--sectionColorBg);
+    padding: 20px 5% 20px 5%;
+    position: relative;
+    @include transition-ease;
+
+    .underline {
+        position: absolute;
+        left: calc(50% - 39px);
+        top: 70px;
+        width: 78px;
+        height: 3px;
+        background: linear-gradient(90deg, #45E6FC 0%, #356EFF 100%);
+    }
+
+    .body {
+        .row {
+            // background-color: blue;
+            position: relative;
+
+            .left-hang, .right-hang {
+                position: absolute;
+            }
+
+            .left-hang {
+                left: 0px;
+                top: -10px;
+            }
+            .right-hang {
+                right: 0px;
+                bottom: -10px;
+            }
+
+        }
+        .works-card {
+            @include transition-ease;
+            cursor: pointer;
+
+            &:hover {
+                filter: brightness(80%);
+            }
+
+            img {
+                width: 100%;
+                height: 247px;
+            }
+            &__bottom {
+                display: flex;
+                justify-content: space-between;
+                background: #040402;
+                height: 54px;
+                align-items: center;
+                padding: 0 5%;
+
+                .name {
+                    color: rgba(255, 255, 255, 0.7);
+                }
+            }
+        }
+    }
+}

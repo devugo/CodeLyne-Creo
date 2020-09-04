@@ -1,0 +1,48 @@
+#creo-contact {
+    position: relative;
+    padding: 20px 5% 20px 5%;
+
+    .underline {
+        position: absolute;
+        // left: calc(50% - 39px);
+        left: 8%;
+        top: 110px;
+        width: 78px;
+        height: 3px;
+        background: linear-gradient(90deg, #45E6FC 0%, #356EFF 100%);
+    }
+    .body {
+        .content {
+            form {
+                input {
+                    border-top: 0;
+                    border-right: 0;
+                    border-left: 0;
+                    border-bottom-color: var(--primaryColor);
+                    background-color: inherit;
+                    // margin-top: 20px;
+
+                    &::placeholder {
+                        // color: rgba(255, 255, 255, 0.5);
+                        color: var(--textColor);
+                    }
+                }
+            }
+
+            iframe {
+                width: 100%;
+                height: 400px;
+                // max-height: 450px;
+            }
+        }
+    }
+}
+
+@include media-md {
+    #creo-contact {
+    
+        .underline {
+            left: 6.2%;
+        }
+    }
+}
